@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Using YubiKey Neo for PGP keys on Debian
+title: Using YubiKey Neo for PGP keys on Linux
+category: security
+tag: yubikey,openpgp
 ---
 This guide assumes that you have already configured your Yubikey Neo as a smart card with your private keys and a pin. By the end of this guide you will have configured the machine to be able to use the Yubikey to decrypt and sign documents on your machine.
 
