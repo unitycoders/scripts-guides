@@ -4,8 +4,21 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This website is a compiled version of the scripts and guides repository curated
+by Unity Coders. It features articles and scripts which have been written and
+curated by our members.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+## How to contribute
+Unity Coders members have commit access to the [repository][git-repo]. You can create
+articles or add scripts by committing directly to it. Articles should be written
+in a markup language compatible with [Jeykll][jekyll-posts].
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+## Who has contributed?
+<ul>
+{% for member in site.data.authors %}
+<li><a href="https://github.com/{{ member.github }}">{{ member.name }}</a></li>
+{% endfor %}
+</ul>
+
+[git-repo]: https://github.com/unitycoders/scripts-guides
+[jekyll-posts]: http://jekyllrb.com/docs/posts/
