@@ -9,6 +9,9 @@
 
     <div class="page-content">
       <div class="wrap">
+        {% for category in site.categories %}
+          {{ category | first }}
+        {% endfor %}
       {{ content }}
       </div>
     </div>
