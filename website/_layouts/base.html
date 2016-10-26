@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>PAGENAME :: FOSS Galaxy</title>
+<link rel="stylesheet" href="https://www.fossgalaxy.com/branding/css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+
+<div class="container">
+<h1>FOSS Galaxy KB</h1>
+
+<div class="row">
+<div class="col-md-8">
+{{content}}
+</div>
+<div class="col-md-4">
+
+<ul>
+{% for category in site.categories %}
+<li>{{ category | first }}</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+
+</div>
+</body>
+</html>
